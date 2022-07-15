@@ -175,7 +175,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px 5px;
 }
 
 .footer-frame img {
