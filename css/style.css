@@ -199,8 +199,10 @@ footer {
     display: inline-block;
 }
 
-/* Telefones em paisagem e abaixo */
+/*~~~~~~~~~~ Telefones em paisagem e abaixo 480px ~~~~~~~~~~~*/
+
 @media (max-width: 480px) {
+
     body {
         padding: 0px 10px;
     }
@@ -214,6 +216,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
+        gap: 0px;
     }
 
     .ebook {
@@ -282,86 +285,92 @@ footer {
         font-size: 1rem;
     }
 
-    /* Telefones em paisagem e abaixo */
-@media (max-width: 320px) {
+    /*~~~~~~~~~~ Telefones em tela normal 280px ~~~~~~~~~~~~~~ */
+
+@media (min-width: 280px)  and (max-width: 479px){
+
     body {
         padding: 0px 10px;
     }
 
-    .social-icons img {
-        width: 2rem;
-        height: 2rem;
+    header {
+    height: 150px;
+    flex-direction: column;
+    justify-content: space-around;
     }
 
-    .wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column;
+    header img {
+        width: 230px;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-icons img {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .ebook {
-        margin: auto;
-        padding-right: 10px;
-        width: 200px;
+        padding: 0px;
+        width: 240px;
+        margin-bottom: 20px;
     }
 
     .wrapper h1 {
         font-size: 1.4rem;
+        text-align: center;
+        padding: 0px;
+        line-height: 1.8rem;
+        margin-top: 320px;
+        margin-bottom: 30px;
     }
 
-    aside {
-        margin-left: auto;
-        margin-right: auto;
+    .wrapper h2 {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 20px;
     }
 
     form {
-        width: 342px;
-        height: 390px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-        gap: 20px;
+        width: 230px;
+        height: 265px;
+        padding: 10px;
+        gap: 8px;
     }
 
     form h3 {
-        font-size: 1.3rem;
-        padding-bottom: 8px;
+        font-size: 0.8rem;
+        padding-bottom: 4px;
     }
 
     input[type='text'],
     input[type='email'] {
-        width: 300px;
-        height: 40px;
-        padding: 10px;
+        width: 200px;
+        height: 30px;
+        margin-bottom: 6px;
+        padding: 6px;
     }
 
     ::placeholder {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     fieldset {
-        font-size: 1.2rem;
-        padding: 2px;
+        font-size: 0.8rem;
+        padding: 4px 0px;
     }
 
     .btn {
-        width: 300px;
-        height: 45px;
-        font-size: 1.1rem;
+        width: 200px;
+        height: 30px;
+        font-size: 0.8rem;
     }
 
     /* Footer */
 
-    .footer-frame {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .footer-frame img {
-        width: 200px;
-        margin-bottom: 20px;
-    }
-
     .footer-frame a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
